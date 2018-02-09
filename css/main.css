@@ -2,78 +2,86 @@
  * CSS written here will override Tachyons
  * ======================================== */
 
-.example {
-  font-family: sans-serif;
-  padding: 50px;
+@media (min-width: 600px) {
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
 }
-.example h1 {
-  font-size: 10vw;
-  color: blue;
-  margin: 0;
-}
-.example p {
-  line-height: 1.6;
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
+  grid-gap: 10px;
 }
 body {
-  font-family: "Avenir", sans-serif;
-  /*background-image: linear-gradient(#d7cec7, #fff2e9);*/
+  height: 100%;
+  font: 18px/1.5 "Quattrocento Sans", Helvetica, Arial, sans-serif;
+  background: #ebebeb;
 }
-.header {
-  background: #d7cec7;
-  color: #76323f;
-  min-height: 25vw;
-  padding: var(--gutter);
+header {
+  display: block;
+  width: 100%;
+  min-height: 240px;
+  height: 45%;
+  /*position: relative;
+  overflow: hidden; */
+  background: #fade26;
+  border-bottom: 4px solid #fade26;
 }
-.header .title {
-  align-content: end;
+.item1 {
   display: grid;
+  padding-left: 20px;
+  padding-right: 10px;
 }
-.header h1 {
-  font-size: 8vw;
-  margin: 0;
-}
-.header p {
-  line-height: 1.6;
-}
-.header .description {
-  align-content: space-between;
+.item2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 25px;
+  padding-left: 20px;
+  padding-right: 10px;
 }
-.main {
-  background-image: linear-gradient(#d7cec7, #fff2e9);
-  color: #565656;
-  min-height: 50vw;
-  padding: var(--gutter);
-}
-.main .description {
-  align-content: space-between;
+.item3 {
   display: grid;
+  padding-left: 20px;
+  padding-right: 10px;
 }
-.main p {
-  line-height: 1.6;
-  padding: 15px;
-}
-i {
-  color: #c09f80;
-}
-.main .ingredients1 {
-  align-content: end;
+.item4 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 15px;
+  padding-left: 20px;
+  padding-right: 30px;
 }
-.main .ingredients2 {
-  align-content: space-between;
+.item5 {
   display: grid;
-  padding: 15px;
+  padding-right: 10px;
+  padding-left: 30px;
 }
-.main h3 {
-  font-size: 2vw;
-  color: #76323f;
+.p {
+  display: grid;
+  grid-column: 1/1;
 }
-.main .title {
-  font-size: 1vw;
-  color: #c09f80;
+.img {
+  display: grid;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 35px;
+  padding-right: 5px;
+  width: 300px;
+}
+.img1 {
+  display: grid;
+  padding-top: 190px;
+  padding-left: 90px;
+  padding-right: 30px;
+  min-height: 240px;
+}
+.img2 {
+  display: grid;
+  min-height: 240px;
+  grid-column: span 2;
+}
+.quote {
+  display: grid;
+  /*padding-top: 90px;
+    padding-left: 90px;*/
+  padding-right: 30px;
 }
