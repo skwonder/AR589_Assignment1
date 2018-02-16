@@ -60,28 +60,19 @@ header {
   grid-column: 1/1;
 }
 .img {
-  display: grid;
+  display: block;
   padding-top: 20px;
   padding-left: 30px;
   padding-bottom: 35px;
   padding-right: 5px;
   width: 300px;
+  border-radius: 5px 20px 5px;
 }
 .img1 {
-  display: grid;
+  display: block;
   padding-top: 190px;
   padding-left: 90px;
   padding-right: 30px;
   min-height: 240px;
-}
-.img2 {
-  display: grid;
-  min-height: 240px;
-  grid-column: span 2;
-}
-.quote {
-  display: grid;
-  /*padding-top: 90px;
-    padding-left: 90px;*/
-  padding-right: 30px;
+  border-radius: 5px 20px 5px;
 }
